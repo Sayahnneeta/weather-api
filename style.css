@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* "*" = used to select all elements, hence all elements after and before includes the whole page */
+*,*::before,*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;     
+}
+body
+{
+    height: 100vh;
+    background-color: rgb(37, 77, 165);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f5f5f5;
+    font-family: montserrat, sans-serif;;
+}
+.weather-container
+{
+    background: #ccc;
+    text-align: center;
+}
+.weather 
+{
+   font-size: 22px;
+   margin: 0;
+}
+.temp
+{
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
