@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live weather</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <title>API</title>
 </head>
+
 <body>
-    
+     
+    <div class="weather-container" id="tint">
+        <div id="left">
+            <p class="name"></p>
+            <p class="temp"></p>
+            <p class="description"></p>
+            <img id="icon" src="" alt="No Image">
+            <p class="date"></p>
+            <p class="time"></p>
+        </div>
+
+        <div class=middle>
+            <form>
+                <input type="text" class="searchBox" placeholder="Search your city">
+                <button class="buttons">SEARCH</button>
+            </form>
+
+        </div>
+        <div id="right">
+            
+            <p id="weather"></p>
+            
+           <p  class="heading"  ><img class="svg" src="humidity.svg" alt="No image">Humidity:<br> </p>
+            <p id="humidity" class="heading-comp"></p>
+            
+            <p class="heading"><img class="svg" src="wind.svg" alt="No image">Wind Speed:<br></p>
+             <p id="windSpeed" class="heading-comp"></p>
+            
+            <p class="heading"> <img class="svg" src="thermo.svg" alt="No image">Max Temperature:<br> </p>
+            <p id="maxTemp" class="heading-comp"></p>
+            
+            <p class="heading"><img class="svg" src="thermo.svg" alt="No image">Min Temperature:<br></p>
+            <p id="minTemp" class="heading-comp"></p>
+            
+            <p class="heading"><img class="svg" src="moon.svg" alt="No image">Feels Like:<br> </p>
+            <p id="feelLike" class="heading-comp"></p>
+        </div>
+
+    </div>
 </body>
+
 </html>
