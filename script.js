@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 });
 $.getWeather = function (city) {
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=25fad4b0fa53a3943b0b717292dbf797",
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=25fad4b0fa53a3943b0b717292dbf797",
         function (data) {
             // console.log(data);
             var name = data.name;
