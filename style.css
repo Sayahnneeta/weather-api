@@ -6,7 +6,27 @@
     padding: 0px;
     box-sizing: inherit;   
     font-family: 'Montserrat', sans-serif;  
+   
+    @media (max-width: 1600px) {
+        padding: 7rem;
+      }
+    
+      @media (max-width: 1200px) {
+        padding: 6rem;
+      }
+    
+      @media (max-width: 800px) {
+        padding: 4rem;
+      }
 }
+main {
+    display: flex;
+    justify-content: space-between;
+  
+    @media (max-width: 550px) {
+      margin-bottom: 1rem;
+    }
+  }
 body
 {    
     position: relative;
